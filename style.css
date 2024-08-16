@@ -1,0 +1,208 @@
+p{
+    font-family:"poppins";
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 2px 70px;
+    animation: gerakan 3s;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    width: 90%;
+    bottom: 75%;
+    background-color: white
+    /* position: sticky;
+    top: 0;
+    background-color: rgb(250, 250, 252)  */     ;
+}
+@keyframes gerakan {
+    0%{
+        filter: opacity(0);
+        transform: translateY(-20px);
+    }
+    100%{
+        filter: opacity(1);
+        transform: translateY(0);
+    }
+}
+
+
+/* #dummy{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    position: absolute;
+    top: 10; 
+} */
+section {
+    padding: 32px 70px;
+}
+.about{
+    text-align: justify;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 32px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.about h1{
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.about img{
+    width: 100%;
+}
+
+header h1{
+    font-size: 50px;
+    font-weight: 500;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.btn-2{
+    text-decoration: none;
+    background-color: midnightblue;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+}
+
+.btn{
+    text-decoration: none;
+    border: 2px solid midnightblue;
+    padding: 10px 20px;
+    margin-right: 20px;
+}
+
+.tombol{
+    margin-top: 96px;
+}
+
+.album{
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+    column-gap: 120px;
+    text-align: justify;
+    align-items: center;
+}
+
+.album h1{
+    font-size: 48px;
+
+}
+
+p {
+    font-size: 18px;
+    color: gray;
+}
+
+
+
+.album-1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.album-1>div>div{
+    background-color: midnightblue;
+    padding: 3px 16px;
+}
+
+.album-1 div{
+    text-align: center;
+}
+
+.our{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 64px;
+    margin-top: 48px;
+}
+
+.dua a {
+    text-decoration: none;
+    padding: 10px 28px;
+    background-color: midnightblue;
+    text-decoration: none;
+    color: white;
+}
+
+.bumbum{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+    text-align: center;
+    margin-top: 128px;
+}
+
+.bumbum p{
+    text-align: justify;
+    padding: 20px;
+}
+.bum1{
+    align-items: center;
+    box-shadow: 2px 4px 4px gray;
+}
+
+footer{
+    margin-top: 128px;
+    background-color:midnightblue;
+    color: white;
+    padding: 3px 70px;
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p{
+    color: white;
+    width: 100%;
+}
+
+.sosmed{
+    display: flex;
+    gap: 32px;
+}
+
+nav>a:hover{
+    color: rgb(85, 85, 237);
+}
+
+div>a:hover{
+    background-color:rgb(105, 104, 110);
+}
+
+
+/* Pseudo Clasess */
+.our h1{
+    position: relative;
+}
+
+.our h1::before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: url(img/accent2.svg);
+    position: absolute;
+    left: -15px;
+    top: -25px;
+    z-index: -1;
+}
+
